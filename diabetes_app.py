@@ -286,7 +286,7 @@ with tab1:
 
     preview_df = pd.DataFrame(data, index=['input'])
 
-    st.header("User Input as Dataframe")
+    st.header("Data Hasil Input Pengguna")
     st.write("")
     st.dataframe(preview_df.iloc[:, :6])
     st.write("")
@@ -321,7 +321,7 @@ with tab1:
 
     st.write("")
     st.write("")
-    st.subheader("Prediction :")
+    st.subheader("Hasil :")
     st.subheader(result)
 
 
