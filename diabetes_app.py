@@ -210,27 +210,27 @@ st.set_page_config(
     page_icon=img
 )
 
-st.title("Diabetes Prediction")
+st.title("Diabetes Classification")
 st.write("with Random Forest Algorithm")
 st.write(f"**_Model's Accuracy_** : :green[**{test_data_accuracy}**]%")
 st.write("")
 
-tab1, tab2 = st.tabs(["Prediction Result", "Dataset Transform Info"])
+tab1, tab2 = st.tabs(["Hasil Klasifikasi", "Transformasi Data"])
 
 
 # Tab 1 (Sidebar user input)
 with tab1:
     st.sidebar.header("**User Input** Sidebar")
     st.sidebar.write(
-        "Lihat pada menu Dataset Transform Info untuk mengetahui kategori / skor tiap atribut")
+        "Lihat pada menu Transformasi Data untuk mengetahui kategori / skor tiap atribut")
 
-    Pregnancies = st.sidebar.text_input('Input Nilai Pregnancies')
-    Glucose = st.sidebar.text_input('Input Nilai Glucose')
-    BloodPressure = st.sidebar.text_input('Input Nilai Blood Pressure')
-    BMI = st.sidebar.text_input('Input Nilai BMI')
+    Pregnancies = st.sidebar.text_input('Input Jumlah Kehamilan')
+    Glucose = st.sidebar.text_input('Input Glukosa')
+    BloodPressure = st.sidebar.text_input('Input Tekanan Darah')
+    BMI = st.sidebar.text_input('Input Indeks Massa Tubuh')
     DiabetesPedigreeFunction = st.sidebar.text_input(
-        'Input Nilai Diabetes Pedigree Function')
-    Age = st.sidebar.text_input('Input Nilai Age')
+        'Input Presentase Keturunan Diabetes')
+    Age = st.sidebar.text_input('Input Umur')
 
     # # ===== Umur =====
     # Age = st.sidebar.number_input(
