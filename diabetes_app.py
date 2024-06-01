@@ -276,12 +276,12 @@ with tab1:
 
     # Preview Tab 1 (Prediction Result)
     data = {
-        'Age': Age,
-        'Pregnancies': Pregnancies,
-        'Glucose': Glucose,
-        'Blood Pressure': BloodPressure,
-        'BMI': BMI,
-        'Diabetes Pedigree Function': DiabetesPedigreeFunction
+        'Umur': Age,
+        'Kehamilan': Pregnancies,
+        'Glukosa': Glucose,
+        'Tekanan Darah': BloodPressure,
+        'Indeks Massa Tubuh': BMI,
+        'Presentase Keturunan Diabetes': DiabetesPedigreeFunction
     }
 
     preview_df = pd.DataFrame(data, index=['input'])
