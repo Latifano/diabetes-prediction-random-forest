@@ -233,14 +233,19 @@ with tab1:
     # Age = st.sidebar.text_input('Input Umur')
 
     # ===== Kehamilan =====
+    values = ['<select>', 0, 1]
     Pregnancies = st.sidebar.selectbox(
-        "Input Kehamilan", ("Hamil", "Tidak Hamil"),
+        "Input Kehamilan", (
+            values
+        ),
         index=None,
+        placeholder="Input Pernah Hamil atau Tidak"
     )
     # if "Hamil":
     #     return 0
     # elif "Tidak Hamil":
     #     return 1
+
     st.sidebar.write("")
 
     # Pregnancies = st.sidebar.number_input(
