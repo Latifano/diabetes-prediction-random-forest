@@ -234,42 +234,42 @@ with tab1:
 
     # ===== Kehamilan =====
     Pregnancies = st.sidebar.number_input(
-        label=":blue[**Pregnancies**]", min_value=df_final['Pregnancies'].min())
+        label=":blue[**Input Jumlah Kehamilan**]", min_value=df_final['Pregnancies'].min())
     st.sidebar.write(
         f":orange[Min] value: :orange[**{df_final['Pregnancies'].min()}**], :red[Max] value: :red[**{df_final['Pregnancies'].max()}**]")
     st.sidebar.write("")
 
     # ===== Glukosa =====
     Glucose = st.sidebar.number_input(
-        label=":blue[**Glucose**]", min_value=df_final['Glucose'].min())
+        label=":blue[**Input Glukosa**]", min_value=df_final['Glucose'].min())
     st.sidebar.write(
         f":orange[Min] value: :orange[**{df_final['Glucose'].min()}**], :red[Max] value: :red[**{df_final['Glucose'].max()}**]")
     st.sidebar.write("")
 
     # ===== Tekanan Darah =====
     BloodPressure = st.sidebar.number_input(
-        label=":blue[**BloodPressure**]", min_value=df_final['BloodPressure'].min())
+        label=":blue[**Input Tekanan Darah**]", min_value=df_final['BloodPressure'].min())
     st.sidebar.write(
         f":orange[Min] value: :orange[**{df_final['BloodPressure'].min()}**], :red[Max] value: :red[**{df_final['BloodPressure'].max()}**]")
     st.sidebar.write("")
 
     # ===== Indeks Massa Tubuh =====
     BMI = st.sidebar.number_input(
-        label=":blue[**BMI**]", min_value=df_final['BMI'].min())
+        label=":blue[**Input Indeks Massa Tubuh**]", min_value=df_final['BMI'].min())
     st.sidebar.write(
         f":orange[Min] value: :orange[**{df_final['BMI'].min()}**], :red[Max] value: :red[**{df_final['BMI'].max()}**]")
     st.sidebar.write("")
 
     # ===== DiabetesPedigreeFunction =====
     DiabetesPedigreeFunction = st.sidebar.number_input(
-        label=":blue[**DiabetesPedigreeFunction**]", min_value=df_final['DiabetesPedigreeFunction'].min())
+        label=":blue[**Input Presentase Keturunan Diabetes**]", min_value=df_final['DiabetesPedigreeFunction'].min())
     st.sidebar.write(
         f":orange[Min] value: :orange[**{df_final['DiabetesPedigreeFunction'].min()}**], :red[Max] value: :red[**{df_final['DiabetesPedigreeFunction'].max()}**]")
     st.sidebar.write("")
 
     # ===== Umur =====
     Age = st.sidebar.number_input(
-        label=":blue[**Age**]", min_value=df_final['Age'].min())
+        label=":blue[**Input Umur**]", min_value=df_final['Age'].min())
     st.sidebar.write(
         f":orange[Min] value: :orange[**{df_final['Age'].min()}**], :red[Max] value: :red[**{df_final['Age'].max()}**]")
     st.sidebar.write("")
