@@ -233,11 +233,21 @@ with tab1:
     # Age = st.sidebar.text_input('Input Umur')
 
     # ===== Kehamilan =====
-    Pregnancies = st.sidebar.number_input(
-        label=":blue[**Input Jumlah Kehamilan**]", min_value=df_final['Pregnancies'].min())
-    st.sidebar.write(
-        f":orange[Min] value: :orange[**{df_final['Pregnancies'].min()}**], :red[Max] value: :red[**{df_final['Pregnancies'].max()}**]")
+    Pregnancies = st.selectbox(
+        "Input Kehamilan", ("Hamil", "Tidak Hamil"),
+        index=None,
+    )
+    # if "Hamil":
+    #     return 0
+    # elif "Tidak Hamil":
+    #     return 1
     st.sidebar.write("")
+
+    # Pregnancies = st.sidebar.number_input(
+    #     label=":blue[**Input Jumlah Kehamilan**]", min_value=df_final['Pregnancies'].min())
+    # st.sidebar.write(
+    #     f":orange[Min] value: :orange[**{df_final['Pregnancies'].min()}**], :red[Max] value: :red[**{df_final['Pregnancies'].max()}**]")
+    # st.sidebar.write("")
 
     # ===== Glukosa =====
     Glucose = st.sidebar.number_input(
